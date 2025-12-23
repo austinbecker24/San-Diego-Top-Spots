@@ -5,8 +5,8 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 1;
     background: #f3f5f9;
     color: #1f2933;
 }
@@ -41,15 +41,16 @@ thead {
     color: #ffffff;
 }
 
+/*styling for table headers */
 thead th {
     padding: 14px 12px;
     text-align: left;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: .95rem;
 }
-
+ /*size of gaps between rows */
 tbody tr {
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 3px solid #e5e7eb;
 }
 
 tbody tr:nth-child(even) {
@@ -93,7 +94,8 @@ td button {
     font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    /* think powerpoint transition for buttons to populate */
+    transition: background .5s ease, transform 0.5s ease, box-shadow .5s ease;
 }
 
 td button:hover {
