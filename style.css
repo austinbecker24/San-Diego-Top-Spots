@@ -1,0 +1,124 @@
+/* Global page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f3f5f9;
+    color: #1f2933;
+}
+
+/* Center content and limit width */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+/* Page title */
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 2.2rem;
+    color: #0b7285;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+}
+
+thead {
+    background: #0b7285;
+    color: #ffffff;
+}
+
+thead th {
+    padding: 14px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+tbody tr:hover {
+    background-color: #eef7fb;
+}
+
+tbody td {
+    padding: 12px;
+    vertical-align: top;
+    font-size: 0.95rem;
+}
+
+/* size columns with a little wider description column */
+tbody td:nth-child(1) {
+    width: 20%;
+}
+
+tbody td:nth-child(2) {
+    width: 50%;
+}
+
+tbody td:nth-child(3) {
+    width: 10%;
+}
+
+/* Button + link styles */
+td a {
+    text-decoration: none;
+}
+
+td button {
+    padding: 2px 14px;
+    border-radius: 999px;
+    border: none;
+    background: #0b7285;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+td button:hover {
+    background: #0c8599;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(15, 23, 42, 0.25);
+}
+
+td button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 700px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        font-size: 0.9rem;
+    }
+}
